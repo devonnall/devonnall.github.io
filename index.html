@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <title>Hello</title>
 </head>
 <body>
@@ -12,14 +13,16 @@
     </header>
 
     <main>
-        <section>
+        <section id="tabbedcontent">
             <div class="tab">
                 <button class="tablinks" onclick="openTab(event, 'Home')">Home</button>
                 <button class="tablinks" onclick="openTab(event, 'Readlist')">Readlist</button>
                 <button class="tablinks" onclick="openTab(event, 'About')">About</button>
                 <button class="tablinks" onclick="openTab(event, 'Contact')">Contact</button>
             </div>
-    
+        </section>
+        
+        <section id="indtabs">
             <div id="Home" class="tabcontent">
                 <h3>Home</h3>
                 <p>Content</p>
@@ -39,7 +42,12 @@
                 <h3>Contact</h3>
                 <p>Content</p>
             </div>
+
+            <div id="Search">
+                <img src="assets/search.svg" alt="">
+            </div>
         </section>
+        
     </main>
 </body>
 </html>
